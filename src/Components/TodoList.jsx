@@ -21,14 +21,14 @@ export default function TodoList() {
   return (
     <div className="container-full">
         <div>
-            <div className='animate-[translate_.6s_ease-in-out_.5s_backwards] flex gap-3 p-2 ml-3  font-sans font-semibold text-[20px] relative bg-white'>
+            <div className='animate-[translateX_.6s_ease-in-out_0s_backwards] flex gap-3 p-2 ml-3   font-sans font-semibold text-[20px] relative bg-white'>
                 <Span text={'All'} selected={selected} setSelected ={setSelected}/>
                 <Span text={'Pending'} selected={selected} setSelected ={setSelected}/>
                 <Span text={'Completed'} selected={selected} setSelected ={setSelected}/>
             </div>
 
             {/* ListDisplay*/}
-            <div>
+            <div className='overflow-hidden'>
                 { filterTodos?.length>0 ?<div className='flex flex-col gap-4 mt-5 '>
                      {filterTodos.map((todo ,i) => <Todo key={i} todo ={todo} index={i}/>)}
                   </div>:

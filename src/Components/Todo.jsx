@@ -25,7 +25,7 @@ export default function Todo({todo,index}) {
    //green means completed
    
   return (
-    <div className={`sm:grid animate-[translate_.6s_ease-in-out_0s_backwards]   items-center grid-cols-3 relative shadow-xl sm:shadow-none m-2 p-6 ${todo.completed?'bg-green-200':valid?'bg-white':'bg-red-400'} rounded-xl `}>
+    <div className={`sm:grid ${(index+1)%2==0?'animate-[translateX_.6s_ease-in-out_0s_backwards]':'animate-[translateXR_.6s_ease-in-out_0s_backwards]'}  items-center grid-cols-3 relative shadow-xl sm:shadow-none m-2 p-6 ${todo.completed?'bg-green-200':valid?'bg-white':'bg-red-400'} rounded-xl `}>
         <div className='flex items-center gap-4 w-fit'>
         <span className='relative cursor-pointer ' onClick={handleToggle}>
             <span className='h-[35px] w-[35px] block border-2 border-blue-700 rounded-full'></span>

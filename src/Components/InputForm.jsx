@@ -18,7 +18,7 @@ export default function InputForm() {
  }
     
   return (
-    <div  className='animate-[translate_.7s_ease-in-out_1s_backwards] flex items-center justify-center w-auto m-2 '>
+    <div  className='animate-[translate_.7s_ease-in-out_0s_backwards] flex items-center justify-center w-auto m-2 '>
         <div className='relative flex items-center gap-3 p-2 m-3 bg-white shadow-xl rounded-xl w-fit'>
             <input type='text' placeholder="Enter Today's task" value ={task} onChange={(e) =>setTask(e.target.value)} className='focus:outline-none text-lg     w-[200px] sm:w-[400px]'/>
             <input type='date' value ={deadline} onChange={(e) =>setDeadline(e.target.value)}  className='w-[20px] focus:outline-none'/>

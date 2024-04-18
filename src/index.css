@@ -11,3 +11,23 @@
         opacity: 1;
     }
 }
+@keyframes translateX {
+    0%{
+        transform: translateX(-100%);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes translateXR {
+    0%{
+        transform: translateX(100%);
+        opacity:0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
